@@ -10,7 +10,7 @@ interface CartContainerProps {
 export const CartContainer = (props: CartContainerProps) => {
     return (
         <React.Fragment>
-            <BookGrid cartItems={props.cart.cartItems} books={[]} onAddToCart={props.onAddToCart} />
+            <BookGrid cartItems={props.cart?.cartItems} books={[]} onAddToCart={props.onAddToCart} />
         </React.Fragment>
     );
 };

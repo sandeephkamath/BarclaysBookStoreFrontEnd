@@ -1,6 +1,6 @@
 import { Avatar, Badge } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import React, { useState } from 'react';
+import React from 'react';
 import { Cart } from '../book/Book';
 
 interface CartIconProps {
@@ -9,7 +9,7 @@ interface CartIconProps {
 
 export const CartIcon = (props: CartIconProps) => {
     return (
-        <Badge count={props.cart.cartItems.length}>
+        <Badge count={props.cart?.cartItems.length}>
             <Avatar shape="square" icon={<ShoppingCartOutlined />} />
         </Badge>
     );
