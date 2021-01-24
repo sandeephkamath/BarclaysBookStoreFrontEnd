@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export const ApiClient = axios.create({
-    baseURL: 'http://localhost:8095/',
+    baseURL: 'https://barclays-book-store-backend.herokuapp.com/',
     timeout: 5000,
 });
